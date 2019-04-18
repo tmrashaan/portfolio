@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,900');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
+  text-align: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* HEADER STYLES */
+/* HEADING STYLES */
+h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.scroll-effect {
+  height: 100vh;
+  /* stops the background from repeating */
+  background-repeat: no-repeat;
+  /*  stretch background to cover the element*/
+  background-size: cover;
+  /* show the center of the image */
+  background-position: center;
+  /* scroll content over background */
+  background-attachment: fixed;
+  /* fixes elements in section */
+  position: relative;
+}
+
+header {
+  background-image: url(../images/background.jpg);
+  /* to make a full screen background image..  */
+  background-size: cover;
+  height: 100vh;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Central header content */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  line-height: 85%;
+  font-weight: 800;
+}
+
+hr {
+  width: 40%;
+  border: 5px solid white;
+}
+
+/* Top left header content  */
+.header-subtitle-image {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-subtitle-content {
+  line-height: 95%;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  border-left: solid 2px white;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.header-subtitle i, .header-subtitle {
+  display: inline-block;
+}
+
+i {
+  font-size: 20px;
+}
+
+p.header-subtitle-small {
+  display: block;
+  font-size: 16px;
+}
+
+.header-shape {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 150px;
+  height: 100px;
+  transform: skew(-30deg);
+  border: 2px solid white;
+}
+
+.header-shape-text {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 20px;
+}
+
+.light-button {
+  background: #fff;
+  color: #221e1e;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 1em 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+  line-height: 1em;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+/* MAIN BODY BACKGROUND */
+main {
+  padding-top: 200px;
+  background-color: #1C454B;
+  color: white;
+}
+
+/* SECTION STYLES */
+.big-spacing {
+  margin-top: 60px;
+}
+
+/* HR & INFORMATION 1 */
+main hr {
+  margin: 0 auto;
+  width: 30%;
+  border: 5px solid white;
+}
+
+.information-1 {
+  font-size: 23px;
+  padding: 20px 500px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+/* INFORMATION 2 */
+.information-2 {}
+
+h1 {}
+
+nav a {}
+
+nav a:hover {}
+
+var lines=document.querySelectorAll('.line-reveal');
+for(var i=0;
+i < lines.length;
+
+i++) {
+  (function(line, time) {
+    setTimeout(function() {
+      line.classList.add('show');
+    }
+
+    , time);
+  }
+
+  )(lines[i], i*500);
+}
+
+/* Mobile styles */
+@media screen and (max-width: 760px) {}
